@@ -57,6 +57,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/hitode909/Plack-Middleware-PostErrorToSlack/issues"
+      },
+      "homepage" : "https://github.com/hitode909/Plack-Middleware-PostErrorToSlack",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/hitode909/Plack-Middleware-PostErrorToSlack.git",
+         "web" : "https://github.com/hitode909/Plack-Middleware-PostErrorToSlack"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:HITODE",
    "x_contributors" : [
