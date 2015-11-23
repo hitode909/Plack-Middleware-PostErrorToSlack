@@ -1,14 +1,31 @@
 # NAME
 
-Plack::Middleware::PostErrorToSlack - It's new $module
+Plack::Middleware::PostErrorToSlack - Post error message to Slack when you app dies
 
 # SYNOPSIS
 
-    use Plack::Middleware::PostErrorToSlack;
+    enable "PostErrorToSlack",
+        webhook_url => 'https://hooks.slack.com/services/...'; # Incoming Webhook URL
 
 # DESCRIPTION
 
-Plack::Middleware::PostErrorToSlack is ...
+When your app dies, Plack::Middleware::PostErrorToSlack posts the error to Slack, and rethrow the error.
+
+You can share your error with your team members, And you can discuss how to fix it.
+
+This module is mainly for local development. Do not enable this on production environment.
+
+# CONFIGURATION
+
+- webhook\_url (required)
+
+    You must set up an Incoming Webhooks and set webhook\_url. Read the document below.
+
+    [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks)
+
+- channel, username, icon\_url, icon\_emoji
+
+    You can override these parameters.
 
 # LICENSE
 
